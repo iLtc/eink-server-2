@@ -36,7 +36,7 @@ def draw_task_card(task, description=None, due_date=None, color="black", dark_ba
 
     if center_text:
         # draw centered text
-        font = ImageFont.truetype("./fonts/Roboto-Regular.ttf", 25)
+        font = ImageFont.truetype("./fonts/NotoSansSC-Regular.ttf", 25)
         text_bbox = draw.textbbox((0, 0), task, font=font)
         text_height = text_bbox[3] - text_bbox[1]
         text_width = text_bbox[2] - text_bbox[0]
@@ -46,7 +46,7 @@ def draw_task_card(task, description=None, due_date=None, color="black", dark_ba
 
     if description:
         # draw description text
-        font = ImageFont.truetype("./fonts/Roboto-Regular.ttf", 15)
+        font = ImageFont.truetype("./fonts/NotoSansSC-Regular.ttf", 15)
         description_bbox = draw.textbbox((0, 0), description, font=font)
         description_width = description_bbox[2] - description_bbox[0]
         description_height = description_bbox[3] - description_bbox[1]
@@ -61,7 +61,7 @@ def draw_task_card(task, description=None, due_date=None, color="black", dark_ba
 
     if due_date:
         # draw due date text
-        font = ImageFont.truetype("./fonts/Roboto-Regular.ttf", 15)
+        font = ImageFont.truetype("./fonts/NotoSansSC-Regular.ttf", 15)
         due_date_bbox = draw.textbbox((0, 0), due_date, font=font)
         due_date_width = due_date_bbox[2] - due_date_bbox[0]
         due_date_height = due_date_bbox[3] - due_date_bbox[1]
@@ -77,7 +77,7 @@ def draw_task_card(task, description=None, due_date=None, color="black", dark_ba
     right_text_width = max(description_width, due_date_width)
 
     # draw task text
-    font = ImageFont.truetype("./fonts/Roboto-Regular.ttf", 25)
+    font = ImageFont.truetype("./fonts/NotoSansSC-Regular.ttf", 25)
     task_original = task
     task = task_original
 
