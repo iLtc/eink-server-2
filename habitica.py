@@ -50,7 +50,7 @@ def draw_habits():
 
     debt = rewards[0]['value']
     now = datetime.now()
-    left_days = calendar.monthrange(now.year, now.month)[1] - now.day
+    left_days = calendar.monthrange(now.year, now.month)[1] - now.day + 1
     debt_per_day = ceil(debt / left_days)
 
     title_image = draw_task_card("HABITICA ({}/{})".format(debt, debt_per_day), dark_background=True, center_text=True)
